@@ -311,3 +311,85 @@
 // }
 
 // 17.
+// function sotibOlish() {
+// 	const checkboxes = document.querySelectorAll("input[type = 'checkbox']:not(#qariya)");
+// 	const qariya = document.getElementById("qariya").checked;
+// 	const pul = 30000;
+// 	let jami = 0;
+// 	let tanlangan = 0;
+// 	let natija = 0;
+
+// 	checkboxes.forEach(chk =>{
+// 		if (chk.checked) {
+// 			tanlangan ++;
+// 			jami += parseFloat(chk.value);
+// 		}
+// 	});
+
+// 	if (qariya) {
+// 		jami = jami * 0.9;
+// 	}
+
+// 	if (tanlangan >= 5) {
+// 		jami = jami * 0.85
+// 	}
+
+// 	jami = Math.round(jami)
+
+// 	if (pul >= jami) {
+// 		natija = `Siz sotib oldingiz. Jami ${jami} So'm bo'ldi. Qolgan pul ${pul - jami} So'm.`
+// 	} else {
+// 		natija = `Afsuzki, pul yetarli emas. Sizga ${jami - pul} So'm yetmadi.`
+// 	}
+
+
+// 	document.getElementById("natija").innerText = natija
+// }
+
+// 18.
+
+
+// 19.
+// function sotibOlish() {
+// 		const checkboxes = document.querySelectorAll("input[type = 'checkbox']:not(#qariya)");
+// 		const qariya = document.getElementById("qariya").checked;
+// 		const pul = parseFloat(document.getElementById("pul").value);
+// 		let jami = 0;
+// 		let tanlangan = 0;
+// 		let natija = "";
+// 		let unvon = "";
+	
+// 		checkboxes.forEach(chk =>{
+// 			if (chk.checked) {
+// 				tanlangan ++;
+// 				jami += parseFloat(chk.value);
+// 			}
+// 		});
+	
+// 		if (qariya) {
+// 			jami = jami * 0.9;
+// 		}
+	
+// 		if (tanlangan >= 5) {
+// 			jami = jami * 0.85
+// 		}
+	
+// 		if (jami >= 30000) {
+// 			unvon = "sulton";
+// 		} else if (jami >= 20000) {
+// 			unvon = "boyvotcha";
+// 		} else if (jami >= 10000) {
+// 			unvon = "ishbilarmon";
+// 		}
+
+// 		jami = Math.round(jami)
+	
+// 		if (pul >= jami) {
+// 			natija = `Siz sotib oldingiz. Jami ${jami} So'm bo'ldi. Qolgan pul ${pul - jami} So'm.`
+// 		} else {
+// 			natija = `Afsuzki, pul yetarli emas. Sizga ${jami - pul} So'm yetmadi.`
+// 		}
+	
+// 		document.getElementById("natijaUnvon").innerText = `Sizning unvoningiz ${unvon}.`
+// 		document.getElementById("natija").innerText = natija
+// }
