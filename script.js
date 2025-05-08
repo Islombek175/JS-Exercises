@@ -67,12 +67,12 @@
 // function convert() {
 // 	const kurs = 12900; 
 // 	const miqdor = parseFloat(document.getElementById("miqdor").value);
-// 	const ovqat = document.getElementById("ovqat").value;
+// 	const ovqat1 = document.getElementById("ovqat1").value;
 // 	let natija = "";
 
 // 	if(isNaN(miqdor) || miqdor <= 0) {
 // 		natija = "Iltimos, to'g'ri ma'lumot kiriting."
-// 	} else if (ovqat === "usdToUzs") {
+// 	} else if (ovqat1 === "usdToUzs") {
 // 			natija = `${miqdor * kurs} So'm`;
 // 	} else {
 // 			natija = `${(miqdor / kurs).toFixed(2)} $`;
@@ -83,17 +83,17 @@
 
 // 10.
 // function narxniAytish() {
-// 	const ovqat = document.getElementById("ovqat").value;
+// 	const ovqat1 = document.getElementById("ovqat1").value;
 // 	let natija = "";
 // 	let somsaNarxi = 3000;
 // 	let palovNarxi = 15000;
 // 	let gummaNarxi = 2000;
-// 	if(ovqat === "somsa") {
-// 		natija = `${ovqat}ning narxi ${somsaNarxi} So'm`
-// 	} else if(ovqat === "palov") {
-// 		natija = `${ovqat}ning narxi ${palovNarxi} So'm`
-// 	} else if(ovqat === "gumma") {
-// 		natija =`${ovqat}ning narxi ${somsaNarxi} So'm`
+// 	if(ovqat1 === "somsa") {
+// 		natija = `${somsaNarxi} So'm`
+// 	} else if(ovqat1 === "palov") {
+// 		natija = `${palovNarxi} So'm`
+// 	} else if(ovqat1 === "gumma") {
+// 		natija =`${somsaNarxi} So'm`
 // 	} else {
 // 		natija = "Iltimos, to'g'ri ma'lumot kiriting."
 // 	}
@@ -102,3 +102,154 @@
 // }
 
 // 11.
+// function narxniAytish() {
+// 		const ovqat1 = document.getElementById("ovqat1").value;
+// 		const ovqat2 = document.getElementById("ovqat2").value;
+// 		const ovqat3 = document.getElementById("ovqat3").value;
+// 		let natija = 0;
+// 		let somsaNarxi = 3000;
+// 		let palovNarxi = 15000;
+// 		let gummaNarxi = 2000;
+// 		if(ovqat1 === "somsa") {
+// 			natija += somsaNarxi
+// 		} else if(ovqat1 === "palov") {
+// 			natija += palovNarxi
+// 		} else if(ovqat1 === "gumma") {
+// 			natija += gummaNarxi
+// 		} else {
+// 			natija = "Iltimos, to'g'ri ma'lumot kiriting."
+// 		};
+// 		if(ovqat2 === "somsa") {
+// 			natija += somsaNarxi
+// 		} else if(ovqat2 === "palov") {
+// 			natija += palovNarxi
+// 		} else if(ovqat2 === "gumma") {
+// 			natija += gummaNarxi
+// 		} else {
+// 			natija = "Iltimos, to'g'ri ma'lumot kiriting."
+// 		};
+// 		if(ovqat3 === "somsa") {
+// 			natija += somsaNarxi
+// 		} else if(ovqat3 === "palov") {
+// 			natija += palovNarxi
+// 		} else if(ovqat3 === "gumma") {
+// 			natija += gummaNarxi
+// 		} else {
+// 			natija = "Iltimos, to'g'ri ma'lumot kiriting."
+// 		};
+	
+// 		document.getElementById("natija").innerText = `Jami ${natija} So'm`;
+// 	}
+
+// 12.
+// function narxniAytish() {
+// 			const ovqat1 = document.getElementById("ovqat1").value;
+// 			const ovqat2 = document.getElementById("ovqat2").value;
+// 			const ovqat3 = document.getElementById("ovqat3").value;
+// 			let natija = 0;
+// 			let somsaNarxi = 3000;
+// 			let palovNarxi = 15000;
+// 			let gummaNarxi = 2000;
+// 			if(ovqat1 === "somsa") {
+// 				natija += somsaNarxi
+// 			} else if(ovqat1 === "palov") {
+// 				natija += palovNarxi
+// 			} else if(ovqat1 === "gumma") {
+// 				natija += gummaNarxi
+// 			} else {
+// 				natija = "Iltimos, to'g'ri ma'lumot kiriting."
+// 			};
+// 			if(ovqat2 === "somsa") {
+// 				natija += somsaNarxi
+// 			} else if(ovqat2 === "palov") {
+// 				natija += palovNarxi
+// 			} else if(ovqat2 === "gumma") {
+// 				natija += gummaNarxi
+// 			} else {
+// 				natija = "Iltimos, to'g'ri ma'lumot kiriting."
+// 			};
+// 			if(ovqat3 === "somsa") {
+// 				natija += somsaNarxi
+// 			} else if(ovqat3 === "palov") {
+// 				natija += palovNarxi
+// 			} else if(ovqat3 === "gumma") {
+// 				natija += gummaNarxi
+// 			} else {
+// 				natija = "Iltimos, to'g'ri ma'lumot kiriting."
+// 			};
+		
+// 			document.getElementById("natija").innerText = `Jami ${natija + natija * 0.1} So'm`;
+// 		}
+
+// 13.
+// function avtobusChaqirish() {
+// 	const yozuv = document.getElementById("yozuv").value;
+// 	const qoyliq = [7, 93];
+// 	const chorsu = [3, 54, 12];
+// 	const oloy = [434, 5545, 11111];
+// 	let natija = "";
+
+// 	if (yozuv === "qoyliq") {
+// 		natija = qoyliq
+// 	} else if (yozuv === "chorsu") {
+// 		natija = chorsu
+// 	} else if (yozuv === "oloy") {
+// 		natija = oloy
+// 	} else {
+// 		natija = "Ilitimos, to'g'ri ma'lumot kiriting."
+// 	}
+
+// document.getElementById("natija").innerText = natija;
+// }
+
+// 14.
+function tekshirish() {
+	const javob1 = document.getElementById("topishmoq1").value;
+	const javob2 = document.getElementById("topishmoq2").value;
+	const javob3 = document.getElementById("topishmoq3").value;
+	const javob4 = document.getElementById("topishmoq4").value;
+	const javob5 = document.getElementById("topishmoq5").value;
+	let natija = 0;
+
+	if (javob1 == "1") {
+		natija += 0 
+	} else if (javob1 == "2") {
+		natija += 1
+	} else {
+		natija += 0
+	}
+
+	if (javob2 == "1") {
+		natija += 1 
+	} else if (javob2 == "2") {
+		natija += 0
+	} else {
+		natija += 0
+	}
+
+	if (javob3 == "1") {
+		natija += 0 
+	} else if (javob3 == "2") {
+		natija += 0
+	} else {
+		natija += 1
+	}
+
+	if (javob4 == "1") {
+		natija += 0 
+	} else if (javob4 == "2") {
+		natija += 0
+	} else {
+		natija += 1
+	}
+
+	if (javob5 == "1") {
+		natija += 0 
+	} else if (javob5 == "2") {
+		natija += 0
+	} else {
+		natija += 1
+	}
+
+document.getElementById("natija").innerText = `5/${natija} ball`
+}
